@@ -2,7 +2,7 @@
 
 $data = file_get_contents('http://apply.dataprocessors.com.au/');
 
-$regex = '/Question:.*';
+$regex = '/Question:.*/';
 
 preg_match($regex, $data, $match);
 
